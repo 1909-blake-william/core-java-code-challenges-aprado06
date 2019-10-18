@@ -600,10 +600,10 @@ public class EvaluationService {
 		static String rev = "zyxwvutsrqponmlkjihgfedcba";
 		static char[] regA = reg.toCharArray();
 		static char[] revA = rev.toCharArray();
-		static String out = "";
 
 		public static String encode(String string) {
 			// TODO Write an implementation for this method declaration
+			String out = "";
 			int index = 0;
 			String lower = string.toLowerCase();
 			char[] input = lower.toCharArray();
@@ -637,6 +637,7 @@ public class EvaluationService {
 		 */
 		public static String decode(String string) {
 			// TODO Write an implementation for this method declaration
+			String out = "";
 			int index = 0;
 			char[] input = string.toCharArray();
 			for (int i = 0; i < input.length; i++) {
